@@ -63,6 +63,6 @@ run "enable_private_endpoint_cluster" {
 
   assert {
     condition     = mongodbatlas_privatelink_endpoint_service.private_endpoint.private_link_id == mongodbatlas_privatelink_endpoint.mongodb_endpoint.private_link_id
-    error_message = "Invalid private link id"
+    error_message = "Invalid private link id: does not coincide with the private link id generated from the mongodbatlas_privatelink_endpoint resource"
   }
 }
