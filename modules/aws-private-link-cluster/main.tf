@@ -1,7 +1,9 @@
+data "aws_region" "current" {}
+
 resource "mongodbatlas_privatelink_endpoint" "mongodb_endpoint" {
   project_id    = var.project_id
   provider_name = "AWS"
-  region        = var.region
+  region        = data.aws_region.current.name
 }
 
 resource "aws_vpc_endpoint" "aws_endpoint" {

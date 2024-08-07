@@ -3,11 +3,6 @@ variable "project_id" {
   type        = string
 }
 
-variable "region" {
-  description = "Cloud provider region in which you want to create the private endpoint connection."
-  type        = string
-}
-
 variable "vpc_id" {
   description = "The ID of the VPC in which the endpoint will be used."
   type        = string
