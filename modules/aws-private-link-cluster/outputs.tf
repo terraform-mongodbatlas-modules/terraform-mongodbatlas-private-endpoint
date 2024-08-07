@@ -6,19 +6,19 @@ output "private_link_id" {
 }
 
 output "private_link_error_message" {
-  description = "Error message pertaining to the AWS PrivateLink connection. Returns null if there are no errors"
+  description = "Error message pertaining to the AWS PrivateLink connection. Returns null if there are no errors."
   value       = mongodbatlas_privatelink_endpoint.mongodb_endpoint.error_message
 }
 
 # aws_vpc_endpoint
 
 output "vpc_endpoint_id" {
-  description = "The ID of the VPC endpoint."
+  description = "The ID of the VPC endpoint from AWS."
   value       = aws_vpc_endpoint.aws_endpoint.id
 }
 
 output "vpc_endpoint_arn" {
-  description = "The Amazon Resource Name (ARN) of the VPC endpoint."
+  description = "The Amazon Resource Name (ARN) of the VPC endpoint from AWS."
   value       = aws_vpc_endpoint.aws_endpoint.arn
 }
 
