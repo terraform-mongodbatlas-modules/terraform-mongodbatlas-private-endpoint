@@ -9,7 +9,7 @@ variable "vpc_id" {
 }
 
 variable "subnet_ids" {
-  description = "The ID of one or more subnets in which to create a network interface for the endpoint."
+  description = "The ID of one or more subnets to create a network interface for the endpoint."
   type        = list(string)
 }
 
