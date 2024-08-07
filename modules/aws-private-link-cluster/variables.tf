@@ -4,7 +4,7 @@ variable "project_id" {
 }
 
 variable "vpc_id" {
-  description = "The ID of the VPC in which the endpoint will be used."
+  description = "The ID of the VPC for the endpoint to use."
   type        = string
 }
 
