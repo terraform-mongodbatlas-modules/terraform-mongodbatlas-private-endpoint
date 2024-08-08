@@ -4,9 +4,9 @@ This example shows how you can use the aws private link submodule to setup a pri
 
 ## Usage
 
-- Set the following variables: 
+- Set the following variable: 
 
-    - `project_id`: ID of Atlas project
+    - `project_id`: ID of the Atlas project
 
 - Set the following environment variables:
 
@@ -15,19 +15,19 @@ This example shows how you can use the aws private link submodule to setup a pri
     -  `export AWS_ACCESS_KEY_ID="<YOUR_ACCESS_KEY>"`
     -  `export AWS_SECRET_ACCESS_KEY="<YOUR_SECRET_KEY>"`
 
-- Run the following command:
+- Run the following command to initialize your project:
 
 ```bash
 $ terraform init
 ```
 
-- Run the following command:
+- Run the following command to review the execution plan:
 
 ```bash
 $ terraform plan
 ```
 
-- Run the following command:
+- Run the following command to deploy your infrastructure:
 
 ```bash
 $ terraform apply
@@ -35,7 +35,7 @@ $ terraform apply
 
 ## Resources
 
-The module is going to create the following resources:
+The module creates the following resources:
 
 | Name | Type |
 |------|------|
