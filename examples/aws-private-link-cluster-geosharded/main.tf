@@ -30,7 +30,6 @@ resource "mongodbatlas_advanced_cluster" "geosharded" {
 
   replication_specs {
     zone_name  = "east zone"
-    num_shards = 1
     region_configs {
       priority      = 7
       provider_name = "AWS"
@@ -48,7 +47,6 @@ resource "mongodbatlas_advanced_cluster" "geosharded" {
 
   replication_specs {
     zone_name  = "west zone"
-    num_shards = 1
     region_configs {
       priority      = 7
       provider_name = "AWS"
