@@ -1,5 +1,7 @@
 # private-endpoint-aws-private-link-cluster - enable private endpoint for a single region cluster
 
+_Note: you can see the full source code in the [github repository](https://github.com/terraform-mongodbatlas-modules/terraform-mongodbatlas-private-endpoint/tree/main/examples/aws-private-link-cluster-single-region)_
+
 This example shows how you can use the aws private link submodule to setup a private connection to a MongoDB Atlas Cluster utilizing Amazon Virtual Private Cloud (aws vpc). 
 
 ## Usage

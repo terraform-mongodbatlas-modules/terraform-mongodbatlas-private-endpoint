@@ -1,5 +1,7 @@
 # private-endpoint-aws-private-link-cluster - enable private endpoint for a geosharded cluster
 
+_Note: you can see the full source code in the [github repository](https://github.com/terraform-mongodbatlas-modules/terraform-mongodbatlas-private-endpoint/tree/main/examples/aws-private-link-cluster-geosharded)_
+
 This example shows how you can use the aws private link submodule to setup regionalized private endpoints for a geosharded MongoDB Atlas Cluster utilizing Amazon Virtual Private Cloud (aws vpc).
 
 ## Usage
