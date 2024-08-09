@@ -40,9 +40,7 @@ The module creates the following resources:
 
 Refer to the [MongoDB Atlas](https://registry.terraform.io/providers/mongodb/mongodbatlas/latest/docs) and [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) Terraform providers documentations if you want more information.
 
-## Considerations
-
-In the case of the geosharded cluster, you have to enable the regionalized mode for Private Link and in each module call provide a different AWS provider with a different region. This [example](https://github.com/terraform-mongodbatlas-modules/terraform-mongodbatlas-private-endpoint/tree/main/examples/aws-private-link-cluster-geosharded) shows how you can do it.
+In the case of the geosharded cluster, you have to enable the regionalized mode for Private Link and in each module defined provide a different AWS provider with the corresponding region. This [example](https://github.com/terraform-mongodbatlas-modules/terraform-mongodbatlas-private-endpoint/tree/main/examples/aws-private-link-cluster-geosharded) shows how you can do it.
 
 
 ## License
