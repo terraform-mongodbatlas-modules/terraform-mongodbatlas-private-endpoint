@@ -1,6 +1,6 @@
 # AWS Private Link Cluster Terraform Submodule
 
-This Terraform submodule set ups a [private connection](https://www.mongodb.com/docs/atlas/security-private-endpoint/#-optional--regionalized-private-endpoints-for-multi-region-sharded-clusters) to a [MongoDB Atlas Cluster](https://www.mongodb.com/resources/products/fundamentals/mongodb-cluster-setup) utilizing [Amazon Virtual Private Cloud (aws vpc)](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html). The cluster can be either single region or geosharded (multiple regions).
+This Terraform submodule sets up a [private connection](https://www.mongodb.com/docs/atlas/security-private-endpoint/#-optional--regionalized-private-endpoints-for-multi-region-sharded-clusters) to a [MongoDB Atlas Cluster](https://www.mongodb.com/resources/products/fundamentals/mongodb-cluster-setup) utilizing [Amazon Virtual Private Cloud (aws vpc)](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html). The cluster can be either single region or geosharded (multiple regions).
 
 It creates the following resources:
 
@@ -38,9 +38,9 @@ The module creates the following resources:
 | [aws_vpc_endpoint](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/vpc_endpoint) | resource |
 | [mongodbatlas_privatelink_endpoint_service](https://registry.terraform.io/providers/mongodb/mongodbatlas/latest/docs/resources/privatelink_endpoint_service) | resource |
 
-Refer to the [MongoDB Atlas](https://registry.terraform.io/providers/mongodb/mongodbatlas/latest/docs) and [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) Terraform providers documentations if you want more information.
+For more information, see the [MongoDB Atlas](https://registry.terraform.io/providers/mongodb/mongodbatlas/latest/docs) and [AWS](https://registry.terraform.io/providers/hashicorp/aws/latest/docs) Terraform providers documentation.
 
-In the case of the geosharded cluster, you have to enable the regionalized mode for Private Link and in each module defined provide a different AWS provider with the corresponding region. This [example](https://github.com/terraform-mongodbatlas-modules/terraform-mongodbatlas-private-endpoint/tree/main/examples/aws-private-link-cluster-geosharded) shows how you can do it.
+In the case of the geosharded cluster, you have to enable the regionalized mode for Private Link and in each module defined provide a different AWS provider with the corresponding region. For an example, see [the AWS geosharded cluster example folder](https://github.com/terraform-mongodbatlas-modules/terraform-mongodbatlas-private-endpoint/tree/main/examples/aws-private-link-cluster-geosharded).
 
 
 ## License
