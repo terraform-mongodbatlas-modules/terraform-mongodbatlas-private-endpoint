@@ -64,3 +64,15 @@ resource "mongodbatlas_advanced_cluster" "geosharded" {
 
   depends_on = [module.aws-private-link-us-east-1, module.aws-private-link-us-west-1]
 }
+
+resource "mongodbatlas_project_ip_access_list" "cidr_east" {
+  project_id = var.project_id
+  cidr_block = aws_vpc.vpc_east.cidr_block
+  comment = "VPC East CIDR Block"
+}
+
+resource "mongodbatlas_project_ip_access_list" "cidr_west" {
+  project_id = var.project_id
+  cidr_block = aws_vpc.vpc_west.cidr_block
+  comment = "VPC West CIDR Block"
+}

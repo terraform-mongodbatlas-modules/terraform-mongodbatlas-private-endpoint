@@ -25,3 +25,9 @@ resource "mongodbatlas_advanced_cluster" "cluster" {
   }
   depends_on = [module.aws-private-link-cluster]
 }
+
+resource "mongodbatlas_project_ip_access_list" "cidr" {
+  project_id = var.project_id
+  cidr_block = aws_vpc.vpc.cidr_block
+  comment = "VPC CIDR Block"
+}

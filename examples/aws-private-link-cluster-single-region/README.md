@@ -35,6 +35,9 @@ $ terraform plan
 $ terraform apply
 ```
 
+
+If you want to get more information on connecting applications securely to a MongoDB Atlas data plane with AWS PrivateLink, refer to this [blog post](https://medium.com/@rahul.bobadi/connecting-applications-securely-to-a-mongodb-atlas-data-plane-with-aws-privatelink-daf1eea5c2ea).
+
 ## Resources
 
 The module creates the following resources:
