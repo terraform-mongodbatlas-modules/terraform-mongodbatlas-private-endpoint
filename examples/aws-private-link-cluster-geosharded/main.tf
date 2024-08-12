@@ -4,7 +4,7 @@ resource "mongodbatlas_private_endpoint_regional_mode" "regional_mode" {
 }
 
 module "aws-private-link-us-east-1" {
-  source             = "../../modules/aws-private-link-cluster"
+  source             = "terraform-mongodbatlas-modules/private-endpoint/mongodbatlas//modules/aws-private-link-cluster"
   project_id         = var.project_id
   vpc_id             = aws_vpc.vpc_east.id
   subnet_ids         = [aws_subnet.subnet_east.id]
@@ -12,7 +12,7 @@ module "aws-private-link-us-east-1" {
 }
 
 module "aws-private-link-us-west-1" {
-  source             = "../../modules/aws-private-link-cluster"
+  source             = "terraform-mongodbatlas-modules/private-endpoint/mongodbatlas//modules/aws-private-link-cluster"
   project_id         = var.project_id
   vpc_id             = aws_vpc.vpc_west.id
   subnet_ids         = [aws_subnet.subnet_west.id]

@@ -8,7 +8,7 @@ It creates the following resources:
 - An AWS VPC Endpoint.
 - A MongoDB Atlas Private Link Endpoint Service.
 
-You can find detailed information of the submodule's input and output variables in the [Terraform Public Registry]()
+You can find detailed information of the submodule's input and output variables in the [Terraform Public Registry](https://registry.terraform.io/modules/terraform-mongodbatlas-modules/private-endpoint/mongodbatlas/latest)
 
 ## Usage 
 

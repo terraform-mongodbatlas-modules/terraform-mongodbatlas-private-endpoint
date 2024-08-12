@@ -1,5 +1,5 @@
 module "aws-private-link-cluster" {
-  source             = "../../modules/aws-private-link-cluster"
+  source             = "terraform-mongodbatlas-modules/private-endpoint/mongodbatlas//modules/aws-private-link-cluster"
   project_id         = var.project_id
   vpc_id             = aws_vpc.vpc.id
   subnet_ids         = [aws_subnet.subnet.id]
