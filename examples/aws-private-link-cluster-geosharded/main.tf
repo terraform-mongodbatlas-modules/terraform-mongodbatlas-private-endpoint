@@ -68,11 +68,11 @@ resource "mongodbatlas_advanced_cluster" "geosharded" {
 resource "mongodbatlas_project_ip_access_list" "cidr_east" {
   project_id = var.project_id
   cidr_block = aws_vpc.vpc_east.cidr_block
-  comment = "VPC East CIDR Block"
+  comment    = "VPC East CIDR Block"
 }
 
 resource "mongodbatlas_project_ip_access_list" "cidr_west" {
   project_id = var.project_id
   cidr_block = aws_vpc.vpc_west.cidr_block
-  comment = "VPC West CIDR Block"
+  comment    = "VPC West CIDR Block"
 }
