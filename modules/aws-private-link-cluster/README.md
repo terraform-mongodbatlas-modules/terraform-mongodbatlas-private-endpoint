@@ -15,7 +15,6 @@ You can find detailed information of the submodule's input and output variables 
 ```terraform
 module "aws-private-link-cluster" {
   source  = "terraform-mongodbatlas-modules/private-endpoint/mongodbatlas//modules/aws-private-link-cluster"
-  version = "1.0.0"
   project_id = "66a26b4c85718b1be4ff37cb"
   vpc_id = "vpc-7fc0a543"
   subnet_ids = ["subnet-de0406d2"]
